@@ -43,7 +43,7 @@ function loadMoreContent() {
         contentArea.innerHTML += '<p>More content loaded...</p>';
         contentLoaded = 0;
     }, 1000); // Simulate a network delay
-} */
+} 
 
 // Connect dots script
 
@@ -231,4 +231,4 @@ function loadMoreContent() {
         return Math.pow(p1.x - p2.x, 2) + Math.pow(p1.y - p2.y, 2);
     }
     
-})();
+})();*/
