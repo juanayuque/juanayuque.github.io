@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
     var cursor = { x: canvas.width / 2, y: canvas.height / 2 };
     var repositionInterval = 6000; // Interval for nodes to reposition (milliseconds)
     var repositionDuration = 1000; // Duration of repositioning (milliseconds)
-    var followingSpeed = 1; // Speed of nodes following the cursor
+    var followingSpeed = 1.5; // Speed of nodes following the cursor
 
     function createNodes(count) {
         for (var i = 0; i < count; i++) {
