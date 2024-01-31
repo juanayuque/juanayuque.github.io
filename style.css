@@ -361,7 +361,7 @@ canvas {
 		font-size: 3em;
 	}
   #navbar a {
-    font-size: 14px; /* Smaller font size for navbar buttons */
+    font-size: 10px; /* Smaller font size for navbar buttons */
     padding: 12px 20px; /* Smaller padding for navbar buttons */
   }
 
@@ -370,7 +370,7 @@ canvas {
   }
 
   .demo-1 .main-title {
-    font-size: 2.5em; /* Adjust main-title font size in smaller screens */
+    font-size: 1.5em; /* Adjust main-title font size in smaller screens */
   }
 }
 
