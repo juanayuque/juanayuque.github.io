@@ -363,7 +363,7 @@ canvas {
   top:20px;
   appearance: none;
   background-color: #0c0d16fb;;
-  border: 2px solid #ffffff;
+  border: 1px solid #ffffff;
   border-radius: 8px;
   color: #f0ebeb;
 }
@@ -413,6 +413,10 @@ h1 {
 }
 .navbar-toggle {
   display: block; /* Show the toggle button on small screens */
+  background-color: #0c0d16fb;;
+  border: 1px solid #ffffff;
+  border-radius: 8px;
+  color: #f0ebeb;
 }
 .navbar-links {
   display: none; /* Hide navbar links initially on small screens */
