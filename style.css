@@ -47,6 +47,7 @@ canvas {
 }
 
 .text-content {
+  display: flex;
   max-width: 100%; /* Adjust based on your preference */
 }
 
@@ -355,49 +356,66 @@ canvas {
   border-radius: 10px;
 }
 
+.navbar-toggle {
+  display: none;
+  position: absolute;
+  left:-150px;
+  top:20px;
+  appearance: none;
+  background-color: #0c0d16fb;;
+  border: 2px solid #ffffff;
+  border-radius: 8px;
+  color: #f0ebeb;
+}
 
-@media only screen and (max-width : 768px) {
-	.demo-1 .main-title {
-		font-size: 3em;
+
+@media screen and (max-width: 1189px) {
+
+.demo-1 .main-title {
+		font-size: 1em;
 	}
-  #navbar a {
-    font-size: 10px; /* Smaller font size for navbar buttons */
-    padding: 12px 20px; /* Smaller padding for navbar buttons */
+.large-header {
+    position: relative;
+    width: 100%;
+    background: #0c0d16fb;
+    overflow: hidden;
+    z-index: 1;
+    height: 55vh; /* Adjust this as needed */
+    display: flex; /* Add flex display */
+    justify-content: left; /* Center the content horizontally */
+    align-items: left; /* Center the content vertically */
+    padding: 0px; /* Add some padding inside the header */
+  }
+#navbar a {
+    font-size: 15px; /* Smaller font size for navbar buttons */
+    padding: 4px; /* Smaller padding for navbar buttons */
+    margin-bottom:2px;
+    display:block;
+    text-align: center;
   }
 
-  h1 {
+h1 {
     font-size: 1.5em; /* Smaller font size for headings */
   }
 
-  .demo-1 .main-title {
-    font-size: 1.5em; /* Adjust main-title font size in smaller screens */
-  }
+.content {
+    flex-direction: column;
+    align-items: left; /* Center align items in column layout */
 }
 
-@media screen and (min-width: 968px) {
-  :root {
-      --big-font-size: 3rem;
-      --h1-font-size: 2.25rem;
-      --h2-font-size: 1.5rem;
-      --h3-font-size: 1.25rem;
-      --normal-font-size: 1rem;
-      --small-font-size: .875rem;
-      --smaller-font-size: .813rem;
-  }
+.text-content,
+.image-content {
+    max-width: 100%;
 }
 
-@media (max-width: 768px) {
-  .content {
-      flex-direction: column;
-      align-items: center; /* Center align items in column layout */
-  }
+.main-title {
+  text-align: center; /* Center text on smaller screens */
+}
+.navbar-toggle {
+  display: block; /* Show the toggle button on small screens */
+}
+.navbar-links {
+  display: none; /* Hide navbar links initially on small screens */
+}
 
-  .text-content,
-  .image-content {
-      max-width: 100%;
-  }
-
-  .main-title {
-    text-align: center; /* Center text on smaller screens */
-  }
 }
