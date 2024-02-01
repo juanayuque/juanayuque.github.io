@@ -359,7 +359,7 @@ canvas {
 .navbar-toggle {
   display: none;
   position: absolute;
-  left:-150px;
+  left:-100px;
   top:20px;
   appearance: none;
   background-color: #0c0d16fb;;
@@ -380,7 +380,7 @@ canvas {
     background: #0c0d16fb;
     overflow: hidden;
     z-index: 1;
-    height: 55vh; /* Adjust this as needed */
+    height: 80vh; /* Adjust this as needed */
     display: flex; /* Add flex display */
     justify-content: left; /* Center the content horizontally */
     align-items: left; /* Center the content vertically */
@@ -409,14 +409,11 @@ h1 {
 }
 
 .main-title {
-  text-align: center; /* Center text on smaller screens */
+  text-align: left; /* Center text on smaller screens */
+  font-size:20px;
 }
 .navbar-toggle {
   display: block; /* Show the toggle button on small screens */
-  background-color: #0c0d16fb;;
-  border: 1px solid #ffffff;
-  border-radius: 8px;
-  color: #f0ebeb;
 }
 .navbar-links {
   display: none; /* Hide navbar links initially on small screens */
