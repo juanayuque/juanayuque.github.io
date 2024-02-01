@@ -374,6 +374,14 @@ canvas {
 .demo-1 .main-title {
 		font-size: 1em;
 	}
+#about .about-container {
+    display: grid;
+    grid-template-columns: 1fr; /* Two equal columns */
+    justify-items: center; /* Center items in each grid cell */
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+  }
 .large-header {
     position: relative;
     width: 100%;
