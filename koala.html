@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Special Message</title>
+<style>
+  #messageContainer {
+    cursor: pointer;
+    width: fit-content;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  #textMessage {
+    display: none; /* Ensure the message is hidden initially */
+  }
+</style>
+</head>
+<body>
+
+<div id="messageContainer" onclick="toggleMessage()">
+  <!-- Text Message (hidden initially) -->
+  <div id="textMessage">
+    <b>HAPPY FIRST VALENTINES BABE.</b>
+    <p>You make every day unique,</p>
+    <p>Life feels complete,</p>
+    <p>I might not have bought you a gift,</p>
+    <p>But my feelings for you are concrete.</p>
+    <p>I did promise you a gift,</p>
+    <p>Won't lie to you, now I won't,</p>
+    <p>Just like this picture, you might have one,</p>
+    <p>Check on the reverse, maybe you'll find luck :P</p>
+    <b>I can't wait to see you my little koala, lots of hugs and love for you! I LOVE YOU</b>
+  </div>
+  <!-- Image Displayed by Default -->
+  <img id="imageMessage" src="images/koala.png" alt="Your Image">
+  <div><p>Try clicking this!</p></div>
+</div>
+
+<script>
+function toggleMessage() {
+  var text = document.getElementById("textMessage");
+  var image = document.getElementById("imageMessage");
+
+  // Toggle visibility between text and image
+  if (image.style.display !== "none") {
+    image.style.display = "none"; // Hide image
+    text.style.display = "block"; // Show text
+  } else {
+    text.style.display = "none"; // Hide text
+    image.style.display = "block"; // Show image again
+  }
+}
+</script>
+
+</body>
+</html>
