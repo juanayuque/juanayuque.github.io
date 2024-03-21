@@ -1,0 +1,232 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif; 
+    margin: 0;
+    padding-top: 120px; 
+    background-color: #f5f5f5; 
+}
+
+header {
+    background-color: #343a40;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 10%;
+    z-index: 1000;
+}
+
+header h1 {
+    margin: 0;
+    flex: 1;
+}
+
+#search-container input[type="text"] {
+    padding: 10px;
+    width: 80%;
+    max-width: 300px; 
+    border: 1px solid #ccc; 
+    border-radius: 20px; 
+}
+
+#searchBox {
+    padding: 10px;
+    width: 80%; 
+    max-width: 200px; 
+}
+
+.header-nav {
+    flex: 1;
+    padding-right:3%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header-nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0 10px;
+}
+
+#eventDetails, #topicsContainer {
+    margin: 20px auto; 
+    max-width: 800px; 
+    padding: 20px;
+    background-color: white; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); 
+}
+
+img {
+    max-width: 100%; 
+    height: auto; 
+    border-radius: 4px; 
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 20px; 
+    font-weight: bold;
+    text-transform: uppercase; 
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Topic container styling */
+#topicsContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    display: none; 
+    margin: 20px auto; 
+    max-width: 800px; 
+}
+
+/* Individual topic styling */
+.topic {
+    display: grid;
+    grid-template-columns: 1fr 2fr; 
+    gap: 10px;
+    padding: 20px;
+    background-color: #f5f5f5; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.topic:nth-child(odd) {
+    background-color: #f3f4f7e8; 
+}
+
+.topic:nth-child(even) {
+    background-color: #d2edee; 
+}
+
+.topic:hover {
+    transform: translateY(-5px); 
+}
+
+.topic img {
+    width: 100%; 
+    border-radius: 4px; 
+}
+
+.topic button {
+    padding: 10px 20px;
+    background-color: #85bce0;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px; 
+    font-weight: bold;
+    text-transform: uppercase; 
+    transition: background-color 0.3s ease;
+    align-self: end; 
+}
+
+
+.program {
+    display: grid;
+    grid-template-columns: 1fr 2fr; 
+    gap: 10px;
+    padding: 20px;
+    background-color: #f5f5f5; 
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.program:nth-child(odd) {
+    background-color: #f3f4f7e8; 
+}
+
+.program:nth-child(even) {
+    background-color: #d2edee;  
+}
+
+.program:hover {
+    transform: translateY(-5px); 
+}
+
+.program img {
+    width: 100%; 
+    border-radius: 4px;
+}
+
+button.backButton {
+    grid-column: 1 / -1; 
+    margin-bottom: 20px;
+}
+
+.backButton {
+    display: inline-block; 
+    margin-bottom: 20px; 
+}
+
+#searchResultsContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    display: none; 
+    margin: 20px auto; 
+    max-width: 800px; 
+}
+
+.program-search-result {
+    gap: 10px;
+    padding: 20px;
+    border-radius: 8px; 
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.program-search-result:nth-child(odd) {
+    background-color: #f3f4f7e8; 
+}
+
+.program-search-result:nth-child(even) {
+    background-color: #d2edee; 
+}
+
+.program-search-result:hover {
+    transform: translateY(-5px); 
+}
+
+.searchResultsContainer img {
+    width: 100%; 
+    border-radius: 4px; 
+}
+#sortTopicsButton,.SortProgramsButton {
+    background-color: #bb6842;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px; 
+    margin-bottom:20px;
+    font-weight: bold;
+    text-transform: uppercase; 
+    transition: background-color 0.3s ease;
+    align-self: end; 
+}
+
+#sortTopicsButton:hover,.SortProgramsButton:hover {
+    background-color: #0056b3;
+}
+.topicsHeader {
+    display: flex;
+    flex-direction: column;
+}
+
+
