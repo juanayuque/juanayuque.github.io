@@ -143,14 +143,16 @@ function displayProgramDetailsbysearch(program) {
     // Location Details
     if (program.location) {
         let locationDetailsHTML = `
-            <h4>Location Details</h4>
-            <p><strong>Building:</strong> ${program.location.title}, ${program.room}</p>
-            <p><strong>Description:</strong> ${program.location.description}</p>
-            <p><strong>Address:</strong> ${program.location.address}, ${program.location.postcode}</p>
-            <p><strong>Accessible:</strong> ${program.location.accessible ? 'Yes' : 'No'}</p>
-            <p><strong>Parking:</strong> ${program.location.parking ? 'Yes' : 'No'}</p>
-            <p><strong>Bike Parking:</strong> ${program.location.bike_parking ? 'Yes' : 'No'}</p>
-            <a href="${program.location.website}" target="_blank">More about the location</a>
+        <h4> Event Description </h4>
+        <p>${program.description}
+        <h4>Location Details</h4>
+        <p><strong>Building:</strong> ${program.location.title}, ${program.room}</p>
+        <p><strong>About the building:</strong> ${program.location.description}</p>
+        <p><strong>Address:</strong> ${program.location.address}, ${program.location.postcode}</p>
+        <p><strong>Accessible:</strong> ${program.location.accessible ? 'Yes' : 'No'}</p>
+        <p><strong>Parking:</strong> ${program.location.parking ? 'Yes' : 'No'}</p>
+        <p><strong>Bike Parking:</strong> ${program.location.bike_parking ? 'Yes' : 'No'}</p>
+        <a href="${program.location.website}" target="_blank">More about the location</a>
         `;
         let locationDetailsDiv = document.createElement('div');
         locationDetailsDiv.innerHTML = locationDetailsHTML;
